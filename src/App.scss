@@ -1,0 +1,218 @@
+@import './scss/Reset';
+@import './scss/Variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+
+body {
+	margin: 0;
+	font-family: 'Spartan', sans-serif;
+	font-size: 15px;
+
+	.B-Header {
+		background:
+			url('./images/bg-header-mobile.svg'),
+			no-repeat,
+			linear-gradient(
+				$primary-color,
+				$primary-color
+			);
+		height: 140px;
+		background-size: cover;
+
+		.Container {
+			height: 140px;
+			position: relative;
+
+			.Grid {
+				min-height: 100%;
+				padding: 0 1rem;
+			}
+		}
+
+		&__Title {
+			color: white;
+			margin: 0;
+		}
+	}
+
+	.Container {
+		margin: 0 auto;
+		max-width: 1100px;
+
+		.Grid {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			padding: 1rem;
+		}
+
+		.Align-Center {
+			align-items: center;
+		}
+	}
+
+	.B-Main {
+		min-height: 100vh;
+		background: $light-cyan;
+	}
+
+	.B-Loading {
+		font-weight: 500;
+	}
+
+	.B-Listing {
+		background-color: white;
+		width: 100%;
+		padding: 1rem;
+		margin: 2rem 0;
+		border-radius: 0.5rem;
+		-webkit-box-shadow: 0px 0.5rem 1rem 0px rgba(94,163,164, 0.2);
+		-moz-box-shadow: 0px 0.5rem 1rem 0px rgba(94,163,164, 0.2);
+		box-shadow: 0px 0.5rem 1rem 0px rgba(94,163,164, 0.2);
+		border-left: 0.5rem solid transparent;
+
+		&--New {
+			border-left: 0.5rem solid $primary-color;
+		}
+
+		&__Logo {
+			position: absolute;
+			width: 4rem;
+			transform: translateY(-5rem);
+		}
+
+		&__Info{
+			margin: 2rem 0 0;
+		}
+
+		&__Heading {
+			display: flex;
+			align-items: center;
+		}
+
+		&__Company {
+			color: $dark-grey;
+			font-weight: 500;
+			margin: 0;
+		}
+
+		&__New {
+			border-radius: 2rem;
+			color: white;
+			background-color: $dark-grey;
+			padding: 0.4rem 0.8rem;
+			margin: 0 0.5rem;
+			font-weight: 700;
+		}
+
+		&__Featured {
+			border-radius: 2rem;
+			color: white;
+			background-color: $dark-grey;
+			padding: 0.4rem 0.8rem;
+			font-weight: 700;
+			white-space: nowrap;
+		}
+
+		&__Link {
+			text-decoration: none;
+		}
+
+		&__Title {
+			color: $primary-color;
+			font-weight: 700;
+			margin: 1rem 0;
+
+			&:hover {
+				color: $dark-cyan;
+			}
+		}
+
+		&__Bullets {
+			color: $dark-cyan;
+
+			&::after {
+				content: "\00B7";
+				font-size: 20px;
+				font-weight: 700;
+				padding: 0 0.2rem;
+			}
+
+			&:last-child:after {
+				content: "";
+			}
+		}
+	}
+
+	.B-Keywords {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+
+		&__Tag {
+			display: block;
+			color: $primary-color;
+			font-weight: 700;
+			background: $light-cyan;
+			border-radius: 0.4rem;
+			padding: 0.4rem 0.8rem;
+			margin: 0 1rem 1rem 0;
+		}
+	}
+
+	hr {
+		border-top: 1px solid  $dark-cyan;
+		border-right: none;
+		border-bottom: none;
+		border-left: none;
+		margin: 1rem 0;
+	}
+
+	@media (min-width: $mobile-breakpoint) {
+		.App-header {
+			background:
+				url('./images/bg-header-desktop.svg'),
+				no-repeat,
+				linear-gradient(
+					$primary-color,
+					$primary-color
+				);
+		}
+
+		.B-Listing {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 1rem 0;
+
+			&__Logo {
+				position: relative;
+				height: 100px;
+				width: 100px;
+				transform: translateY(0);
+				margin-right: 2rem;
+			}
+
+			&__Details {
+				display: flex;
+				align-items: center;
+				width: 70%;
+			}
+
+			&__Info {
+				margin: 0 2rem 0 0;
+			}
+		}
+
+		.B-Keywords {
+			justify-content: flex-end;
+
+			&__Tag {
+				margin: 0.5rem;
+			}
+		}
+
+		hr {
+			display: none;
+		}
+	}
+}

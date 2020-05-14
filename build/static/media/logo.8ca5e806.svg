@@ -1,0 +1,22 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="113" height="108" transform="translate(1158.208 411.628)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Logo-2" data-name="Logo">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="100" cy="100" r="100" fill="#5ba4a4"/>
+  </g>
+  <g id="briefcase" transform="translate(44 46)">
+    <g id="Mask_Group_2" data-name="Mask Group 2" transform="translate(-1158.208 -411.628)" clip-path="url(#clip-path)">
+      <g id="iconfinder-icon" transform="translate(1158.05 419.576)">
+        <g id="Group_1" data-name="Group 1" transform="translate(0 0)">
+          <rect id="canvas_background" width="36.762" height="23.996" fill="none"/>
+        </g>
+        <g id="Group_2" data-name="Group 2" transform="translate(0.063 0.06)">
+          <path id="svg_1" d="M40.426,15.281H72.766V7.64H40.426Zm72.766,38.2V82.135a8.951,8.951,0,0,1-2.969,6.745,10.023,10.023,0,0,1-7.138,2.805H10.106A10.023,10.023,0,0,1,2.969,88.88,8.951,8.951,0,0,1,0,82.135V53.483H42.447v9.551a3.575,3.575,0,0,0,1.2,2.686,4,4,0,0,0,2.842,1.134H66.7a4,4,0,0,0,2.842-1.134,3.575,3.575,0,0,0,1.2-2.686V53.483Zm-48.511,0v7.641H48.511V53.483Zm48.511-28.652V47.753H0V24.832a8.951,8.951,0,0,1,2.969-6.745,10.023,10.023,0,0,1,7.138-2.805H32.341V5.73a5.377,5.377,0,0,1,1.769-4.059A6.025,6.025,0,0,1,38.4,0H74.787a6.025,6.025,0,0,1,4.3,1.671A5.377,5.377,0,0,1,80.851,5.73v9.551h22.234a10.023,10.023,0,0,1,7.138,2.805A8.951,8.951,0,0,1,113.192,24.832Z" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
